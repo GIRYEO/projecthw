@@ -6,5 +6,4 @@ def check(request):
     return render(request, 'check.html')
 
 def checkcode(request):
-
-        return render(request, 'checkcode.html')
+    return render(request, 'checkcode.html')
