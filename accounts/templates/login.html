@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+    <h1>출퇴근 관리</h1>
+    <h2>Sign In</h2>
+    <a href="{%url 'signup'%}">회원가입</a>
+    <br><br>
+    <form method="POST" action="{%url 'login'%}">
+        {% csrf_token %}
+
+        Username: 
+        <input type="text" name="username" value="">
+        <br>
+        Password:
+        <input type="password" name="password1" value="">
+        
+        <input class="btn btn-primary" type="submit" value="Login!">
+    </form>
+</body>
+</html>

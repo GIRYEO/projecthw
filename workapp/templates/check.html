@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    {% if user.is_authenticated %}
+    <h1>{{ user.username }}님 <br>개인코드는 {{ user.profile.personalcode }}입니다.</h1> 
+    {%endif%}
+
+    <h3>현재 {{ user.username }}님은 {{user.profile.status}} 상태~</h3>
+    <a href="{%url 'checkcode'%}">근무 상태 바꾸기</a>
+
+</body>
+</html>
